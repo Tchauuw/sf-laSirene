@@ -1,0 +1,264 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pas si bête{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="hautContenu"></div>
+
+        <!-- dalles gestes-->
+        <div id="ecogestes">
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper baleine">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/42.png') }}" alt="Fini les bouteilles, je bois l’eau du robinet"
+                                         title="Fini les bouteilles, je bois l’eau du robinet" />
+                                <figcaption>Fini les bouteilles, je bois l’eau du robinet</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Fini les bouteilles, je bois l’eau du robinet</h2>
+                                    <p>Boire l&rsquo;eau du robinet, c&rsquo;est <strong>12 kg</strong> de bouteilles
+                                        plastiques utilis&eacute;es en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#7"
+                                       title="Fini les bouteilles, je bois l&rsquo;eau du robinet">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper crabe">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/36.png') }}" alt="Au lieu de jeter, je revends, je donne ou je répare "
+                                         title="Au lieu de jeter, je revends, je donne ou je répare " />
+                                <figcaption>Au lieu de jeter, je revends, je donne ou je répare </figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Au lieu de jeter, je revends, je donne ou je répare</h2>
+                                    <p>Revendre, donner ou r&eacute;parer, c&rsquo;est <strong>13 kg </strong>de
+                                        d&eacute;chets jet&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#8"
+                                       title="Au lieu de jeter, je revends, je donne ou je r&eacute;pare">En savoir
+                                        plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper saint_jacques">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/43.png') }}" alt="Je colle un « stop pub » sur ma boîte aux lettres"
+                                         title="Je colle un « stop pub » sur ma boîte aux lettres" />
+                                <figcaption>Je colle un « stop pub » sur ma boîte aux lettres</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je colle un « stop pub » sur ma boîte aux lettres</h2>
+                                    <p>Coller un &laquo; stop pub &raquo; sur sa bo&icirc;te-aux-lettres, c&rsquo;est
+                                        <strong>35 kg</strong> de papier &eacute;conomis&eacute;s par an et par foyer.
+                                    </p>
+                                    <a class="lienGlobal" href="#9"
+                                       title="Je colle un &laquo;&nbsp;stop pub&nbsp;&raquo; sur ma bo&icirc;te aux lettres">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper pieuvre">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/4.png') }}" alt="Je composte les épluchures et les restes de cuisine"
+                                         title="Je composte les épluchures et les restes de cuisine" />
+                                <figcaption>Je composte les épluchures et les restes de cuisine</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je composte les épluchures et les restes de cuisine</h2>
+                                    <p>Composter ses restes de cuisine, c&rsquo;est <strong>40 kg</strong> de
+                                        d&eacute;chets jet&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#10"
+                                       title="Je composte les &eacute;pluchures et les restes de cuisine">En savoir
+                                        plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper pelican">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/5.png') }}" alt="Pour les courses, je prends mon cabas"
+                                         title="Pour les courses, je prends mon cabas" />
+                                <figcaption>Pour les courses, je prends mon cabas</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Pour les courses, je prends mon cabas</h2>
+                                    <p>Utiliser un cabas, c&rsquo;est <strong>2 kg</strong> de sacs plastiques
+                                        jet&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#11" title="Pour les courses, je prends mon cabas">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper espadon">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/6.png') }}" alt="J’achète de préférence à la coupe ou en vrac"
+                                         title="J’achète de préférence à la coupe ou en vrac" />
+                                <figcaption>J’achète de préférence à la coupe ou en vrac</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>J’achète de préférence en vrac ou à la coupe</h2>
+                                    <p>Acheter en vrac ou &agrave; la coupe, c&rsquo;est <strong>2 kg</strong>
+                                        d&rsquo;emballages jet&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#12"
+                                       title="J&rsquo;ach&egrave;te de pr&eacute;f&eacute;rence en vrac ou &agrave; la coupe">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper pingouin">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/7.png') }}" alt="Je range mon frigo pour gaspiller moins "
+                                         title="Je range mon frigo pour gaspiller moins " />
+                                <figcaption>Je range mon frigo pour gaspiller moins </figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je range mon frigo pour gaspiller moins</h2>
+                                    <p>Ranger son frigo, c&rsquo;est <strong>7 kg</strong> &nbsp;d&rsquo;aliments encore
+                                        emball&eacute;s gaspill&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#13" title="Je range mon frigo pour gaspiller moins">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper goeland">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/40.png') }}" alt="Je recycle les déchets verts de mon jardin"
+                                         title="Je recycle les déchets verts de mon jardin" />
+                                <figcaption>Je recycle les déchets verts de mon jardin</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je recycle les déchets verts de mon jardin</h2>
+                                    <p>Broyer, pailler, composter, c&rsquo;est <strong>90 kg</strong> de d&eacute;chets
+                                        verts jet&eacute;s en moins par an et par personne.</p>
+                                    <a class="lienGlobal" href="#14"
+                                       title="Je recycle les d&eacute;chets verts de mon jardin">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper bernard">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/44.png') }}" alt="Je donne les vêtements dont je ne veux plus"
+                                         title="Je donne les vêtements dont je ne veux plus" />
+                                <figcaption>Je donne les vêtements dont je ne veux plus</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je donne les vêtements dont je ne veux plus</h2>
+                                    <p>Donner une seconde vie &agrave; ses v&ecirc;tements, c&rsquo;est <strong>7
+                                            kg</strong> de d&eacute;chets jet&eacute;s en moins par an et par personne.
+                                    </p>
+                                    <a class="lienGlobal" href="#15"
+                                       title="Je donne les v&ecirc;tements dont je ne veux plus">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper sterne">
+                        <div class="front">
+                            <figure><img src="{{ asset('images/9.png') }}" alt="Je n’imprime que si nécessaire, plutôt en recto-verso"
+                                         title="Je n’imprime que si nécessaire, plutôt en recto-verso" />
+                                <figcaption>Je n’imprime que si nécessaire, plutôt en recto-verso</figcaption>
+                            </figure>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <div>
+                                    <h2>Je n’imprime que si nécessaire, plutôt recto-verso</h2>
+                                    <p>Limiter ses impressions, c&rsquo;est <strong>6 kg</strong> de papier
+                                        &eacute;conomis&eacute;s par an et par personne.&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+                                    <a class="lienGlobal" href="#16"
+                                       title="Je n&rsquo;imprime que si n&eacute;cessaire, plut&ocirc;t recto-verso">En
+                                        savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="articleAccueil">
+                    <div>
+                        <div>
+                            <h2>
+                                <a href="#" title="Et encore..." class="">Et encore...</a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+

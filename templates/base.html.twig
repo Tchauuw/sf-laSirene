@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheets %}
+        <link type="text/css" media="all" rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {% endblock %}
+    {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('js/custom.modernizr.min.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}" defer></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js" defer></script>
+        <script type="text/javascript" src="{{ asset('js/foundation.min.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/underscore.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/json2.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/moment-2.2.1.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/clndr.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.validate.min.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/messages_fr.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/owl.carousel.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.circliful.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/fotorama.js') }}" defer></script>
+        <script type="text/javascript" src="{{ asset('js/fonctions.js') }}" defer></script>
+    {% endblock %}
+</head>
+<body>
+<header>
+    <h1>
+        <a href="#" title="Retour à l'accueil" class="home"><img src="{{ asset('images/pas-si-bete.png') }}" alt="Logo C'est pas si bête de réduire nos déchets!" /></a>
+    </h1>
+    <div id="reseau">
+        <div id="facebook" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <a target="_blank" href="https://fr-fr.facebook.com/larochelleagglo"
+                   title="Aller sur la page facebook de l'Agglomération de La Rochelle" class="front"><img
+                            src="{{ asset('images/facebook.png') }}" alt="Logo Facebook" /></a>
+                <a target="_blank" href="https://fr-fr.facebook.com/larochelleagglo"
+                   title="Aller sur la page facebook de l'Agglomération de La Rochelle" class="back"><img
+                            src="{{ asset('images/facebook-on.png') }}" alt="Logo Facebook" /></a>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<div class="contain-to-grid main-nav-wrapper">
+    <nav id="main-nav" class="hide-for-small">
+        <div id="topmenu" class="row">
+            <ul class="large-block-grid-5 medium-block-grid-5 small-block-grid-1">
+                <li class="menu-programme"><a href="#" class="rubrique">Le programme</a></li>
+                <li class="menu-10-gestes"><a href="#" class="rubrique">10 gestes simples</a></li>
+                <li class="menu-agenda"><a href="#" title="Agenda">Agenda</a></li>
+                <li class="menu-pratique"><a href="#" class="rubrique">Pratique</a></li>
+                <li class="menu-contact"><a href="#" class="rubrique">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+{% block body %}{% endblock %}
+<footer>
+    <div>
+        <p>Symfony - LPMiaw - DFS - 2023/2024</p>
+    </div>
+</footer>
+</body>
+</html>
+
