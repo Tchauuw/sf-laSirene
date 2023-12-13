@@ -17,7 +17,7 @@ class AppFixtures extends Fixture
             $manager->persist($tag);
         }
         // les noms des gestes sont associées à des classes css qui permettent d'afficher correctement chaque vignette !
-        $nomGestes=array("baleine", "crabe","saint-jacques","pieuvre","pelican","espadon","pingouin","goeland","bernard", "sterne");
+        $nomGestes=array("baleine", "crabe","saintjacques","pieuvre","pelican","espadon","pingouin","goeland","bernard", "sterne");
         $titreGestes=array("Fini les bouteilles, je bois l’eau du robinet",
             "Au lieu de jeter, je revends, je donne ou je répare",
             "Je colle un « stop pub » sur ma boîte aux lettres",

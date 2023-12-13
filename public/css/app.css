@@ -11518,13 +11518,13 @@ footer>div #logos a:nth-child(2) {
 #ecogestes .pelican .back strong {
  color:#f9d400
 }
-#ecogestes .saint_jacques {
+#ecogestes .saintjacques {
  background:#bc9f71
 }
-#ecogestes .saint_jacques .back {
+#ecogestes .saintjacques .back {
  background:#bc9f71
 }
-#ecogestes .saint_jacques .back strong {
+#ecogestes .saintjacques .back strong {
  color:#e73439
 }
 #ecogestes .pieuvre {
@@ -11771,24 +11771,24 @@ a.doc:before {
 #mainContent .crabe img.imageBestiaire {
  margin-top:160px
 }
-#mainContent .saint-jacques {
+#mainContent .saintjacques {
  background:#bc9f71
 }
-#mainContent .saint-jacques strong {
+#mainContent .saintjacques strong {
  color:#e73439
 }
-#mainContent .saint-jacques>div:first-child h1:after {
+#mainContent .saintjacques>div:first-child h1:after {
  border-top:40px solid #bc9f71
 }
-#mainContent .saint-jacques>div:first-child p strong {
+#mainContent .saintjacques>div:first-child p strong {
  font-size:inherit
 }
-#mainContent .saint-jacques>div:nth-child(2) #bulle,
-#mainContent .saint-jacques>div:nth-child(2) .circle-text-dessus {
+#mainContent .saintjacques>div:nth-child(2) #bulle,
+#mainContent .saintjacques>div:nth-child(2) .circle-text-dessus {
  top:-15px;
  margin-left:-120px
 }
-#mainContent .saint-jacques img.imageBestiaire {
+#mainContent .saintjacques img.imageBestiaire {
  margin-top:190px;
  width:400px
 }
@@ -11992,10 +11992,10 @@ a.doc:before {
 #mainContent #navigGestes ul.gestes-navigation li .crabe a.on:before {
  background-image:url("../img/geste2.png")
 }
-#mainContent #navigGestes ul.gestes-navigation li .saint_jacques a.on {
+#mainContent #navigGestes ul.gestes-navigation li .saintjacques a.on {
  border-top:solid 2px #bc9f71
 }
-#mainContent #navigGestes ul.gestes-navigation li .saint_jacques a.on:before {
+#mainContent #navigGestes ul.gestes-navigation li .saintjacques a.on:before {
  background-image:url("../img/geste3.png")
 }
 #mainContent #navigGestes ul.gestes-navigation li .pieuvre a.on {
@@ -12530,7 +12530,7 @@ table.tableau-marron td strong {
  #mainContent .crabe img.imageBestiaire {
   margin-top:190px
  }
- #mainContent .saint_jacques img.imageBestiaire {
+ #mainContent .saintjacques img.imageBestiaire {
   margin-top:215px
  }
  #mainContent .pelican img.imageBestiaire {
