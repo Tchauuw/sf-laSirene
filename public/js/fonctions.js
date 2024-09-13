@@ -165,11 +165,11 @@ $(document).ready(function(){
 			$(this).data('href', $(this).attr('href'));
 			$(this).attr('href', 'javascript:void(0);');
 			
-			if (typeof( $("div.complet > div").attr('class') ) !== "undefined") {
+/*			if (typeof( $("div.complet > div").attr('class') ) !== "undefined") {
 				var tabClassBestiare = $("div.complet > div").attr('class').split(' ');
 				if($(this).parent('div').hasClass(tabClassBestiare[1]))
 					$(this).addClass('on');
-			}
+			}*/
 		})
 		.promise()
 		.done(function  () {
