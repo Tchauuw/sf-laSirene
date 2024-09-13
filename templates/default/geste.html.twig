@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pas si bête{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="hautContenu"></div>
+
+        <div id="mainContent">
+
+            <a name="hautContenu"></a>
+            <ul id="ariane" class="breadcrumbs">
+                <li><a href="{{ path('app_static') }}" title="Retour à l'accueil" class="home">Accueil</a></li>
+                <li>10 gestes simples</li>
+                <li>{{ geste.titre }}</li>
+                <li><a href="#">Modifier</a></li>
+            </ul>
+
+
+            <div id="zone1" class="contenu">
+                <div class="complet">
+                    <div class="bestiaire baleine" style="overflow:hidden;">
+                        <div class="colonneTexte" style="left:-800px;">
+                            <h1>{{ geste.titre }}</h1>
+                            <div>
+                                <p>{{ geste.description | raw }}</p>
+                            </div>
+                        </div>
+                        <div class="colonneIllust" style="right:-800px;">
+                            <div data-begin="0.137" data-bgcolor="transparent" data-dimension="280" data-fgcolor="#fff"
+                                 data-fill="transparent" data-fontsize="16" data-info="Les bons gestes" data-percent="94"
+                                 data-width="5" id="bulle" data-text=" "></div>
+                            <div class="circle-text-dessus">
+                                <p>{{ geste.impact | raw }}</p>
+                            </div>
+                            <figure><img src="/images/{{ asset( geste.image ) }}" class="imageBestiaire"
+                                         alt="{{ geste.titre }}"
+                                         title="{{ geste.titre }}" />
+                                <figcaption>{{ geste.titre }}</figcaption>
+                            </figure>
+                            <h4 class="tag">
+                                {% for tag in geste.tag %}
+                                    <span>{{ tag.nom }}</span>
+                                {% endfor %}
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="navigGestes">
+                <ul class="inline-list gestes-navigation">
+                    {% for collection in collections %}
+                        {% if collection.visible != 0 %}
+                        {% if collection.id == geste.id %}
+                            <li>
+                                <div class="{{ collection.nom }}">
+                                    <a href="{{ path('app_geste', {'id': collection.id}) }}" title="{{ collection.titre }}" class="on">
+                                        <figure>
+                                            <img src="/images/{{ asset( collection.image ) }}" alt="{{ collection.titre }}"
+                                                 title="{{ collection.titre }}" />
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+
+                            {% else %}
+
+                                <li>
+                                    <div class="{{ collection.nom }}">
+                                        <a href="{{ path('app_geste', {'id': collection.id}) }}" title="{{ collection.titre }}">
+                                            <figure>
+                                                <img src="/images/{{ asset( collection.image ) }}" alt="{{ collection.titre }}"
+                                                     title="{{ collection.titre }}" />
+                                            </figure>
+                                        </a>
+                                    </div>
+                                </li>
+
+                        {% endif %}
+                        {% endif %}
+
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </main>
+{% endblock %}

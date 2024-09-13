@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pas si bête{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="hautContenu"></div>
+
+        <!-- dalles gestes-->
+        <div id="ecogestes">
+            {% for gest in geste %}
+                {% if gest.visible != 0 %}
+                <div>
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper {{ gest.nom }}">
+                            <div class="front">
+                                <figure><img src="/images/{{ asset( gest.image ) }}" alt="{{ gest.titre }}"
+                                             title="{{ gest.titre }}" />
+                                    <figcaption>{{ gest.titre }}</figcaption>
+                                </figure>
+                            </div>
+                            <div class="back">
+                                <div>
+                                    <div>
+                                        <h2>{{ gest.titre }}</h2>
+                                        <p>{{ gest.impact | raw }}</p>
+                                        <a class="lienGlobal" href="{{ path('app_geste', {'id': gest.id}) }}"
+                                           title="{{ gest.titre }}">En savoir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}
